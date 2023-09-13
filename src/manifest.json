@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter-ex",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["css/style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["tabs", "activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/logo_16.png",
+      "48": "icons/logo_48.png",
+      "128": "icons/logo_128.png"
+    }
+  }
+}

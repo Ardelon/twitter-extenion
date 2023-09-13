@@ -1,0 +1,15 @@
+body {
+  border: 3px solid red;
+}
+
+.not-twitter {
+  background-color: red;
+  font: 24px;
+  color: white;
+}
+
+.twitter {
+  background-color: green;
+  font: 24px;
+  color: black;
+}
